@@ -39,3 +39,7 @@ target_link_libraries(radix_tree_inline_string_uint8t_key ${LIBPMEMOBJ++_LIBRARI
 add_executable(radix_tree_complex_value radix_tree_complex_value.cpp)
 target_include_directories(radix_tree_complex_value PUBLIC ${LIBPMEMOBJ++_INCLUDE_DIRS} . ..)
 target_link_libraries(radix_tree_complex_value ${LIBPMEMOBJ++_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+
+add_executable(radix_tree_perf radix_tree_perf.cpp)
+target_include_directories(radix_tree_perf PUBLIC ${LIBPMEMOBJ++_INCLUDE_DIRS} . ..)
+target_link_libraries(radix_tree_perf ${LIBPMEMOBJ++_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
